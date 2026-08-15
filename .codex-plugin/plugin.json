@@ -1,0 +1,23 @@
+{
+  "name": "alfboard",
+  "version": "1.0.0",
+  "displayName": "Alfboard",
+  "description": "Conducts stakeholder discovery through voice interviews and produces a validated deployment brief and product input document.",
+  "author": { "name": "Taehyun Kim" },
+  "license": "MIT",
+  "keywords": ["deployment", "discovery", "interview", "voice", "product-feedback", "change-management"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Alfboard",
+    "shortDescription": "Turn validated stakeholder discovery into deployment and product decisions.",
+    "longDescription": "Interview customer stakeholders, validate the resulting discovery contract, and produce an executive deployment brief and a product input document for professional review.",
+    "developerName": "Taehyun Kim",
+    "category": "Developer Tools",
+    "capabilities": ["Interactive", "Read", "Write"],
+    "defaultPrompt": [
+      "Start a deployment discovery interview.",
+      "Create a deployment brief and product input document from this discovery record."
+    ],
+    "brandColor": "#334155"
+  }
+}

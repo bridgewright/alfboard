@@ -1,0 +1,10 @@
+{
+  "name": "alfboard",
+  "version": "1.0.0",
+  "displayName": "Alfboard",
+  "description": "Conducts stakeholder discovery through voice interviews and produces a validated deployment brief and product input document.",
+  "author": { "name": "Taehyun Kim" },
+  "license": "MIT",
+  "keywords": ["deployment", "discovery", "interview", "voice", "product-feedback", "change-management"],
+  "skills": "./skills/"
+}

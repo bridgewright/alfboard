@@ -1,0 +1,23 @@
+name: Test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m pip install pytest
+      - run: python -m pytest skills/interview/tests -q
+      - run: python skills/interview/scripts/validate_discovery.py skills/interview/assets/sample-discovery.json
+      - run: python skills/interview/scripts/validate_discovery.py samples/moveon/deployment-discovery.json
+      - run: bash -n skills/interview/setup.sh skills/interview/launch.sh
+      - run: python -m json.tool .claude-plugin/marketplace.json > /dev/null

@@ -1,0 +1,12 @@
+{
+  "name": "alfboard",
+  "owner": { "name": "Taehyun Kim" },
+  "description": "Voice-led deployment discovery with a deterministic handoff contract.",
+  "plugins": [
+    {
+      "name": "alfboard",
+      "source": "./",
+      "description": "Voice-led deployment discovery with a deterministic handoff contract."
+    }
+  ]
+}
